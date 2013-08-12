@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML5 Accelerometer</title>
+
+		<link rel="stylesheet" href="css/reset.css" type="text/css"> </link>
+		<link rel="stylesheet" href="css/style.css" type="text/css"> </link>
+
+		<script src="js/jquery.js" type="text/javascript"> </script>
+		<script src='js/Util.js' type="text/javascript"></script>
+		<script src="js/Accelerometer.js" type="text/javascript"></script>
+		<script src="js/hw5.js" type="text/javascript"></script>
+
+	</head>
+
+	<body onload="start()">
+
+		<p id="score"> Score: 100</p>
+
+		<hr id="line">
+
+		<table>
+			<tr>
+				<th> Dimension </th>
+				<th> Target </th>
+				<th> Observed </th>
+				<th> Difference </th>				
+			</tr>
+
+			<tr>
+				<td id="x"> x </td>
+				<td id="target1"> </td>
+				<td id="obs1"> </td>
+				<td id="diff1"> </td>
+			</tr>
+
+			<tr>
+				<td id="y"> y </td>
+				<td id="target2"> </td>
+				<td id="obs2"> </td>
+				<td id="diff2"> </td>
+			</tr>
+
+			<tr>
+				<td id="z"> z </td>
+				<td id="target3"> </td>
+				<td id="obs3"> </td>
+				<td id="diff3"> </td>
+			</tr>
+			
+		</table>
+
+		<div class="buttons">
+			<button type="button" id="random" onclick="randomize()"> Randomize </button>
+			<button type="button" id="start" onclick="startOver()"> Start Over </button>
+			<button type="button" id="clickScore" onclick="updateScore()"> Score! </button>
+		</div>
+
+	</body>
+</html>

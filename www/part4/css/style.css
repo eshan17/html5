@@ -1,0 +1,295 @@
+body {
+	background-color: white;
+}
+
+#wrapper {
+	background-color: white;
+}
+
+
+#container {
+	position: absolute;
+	background-color: #EEE;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	margin-top: 2.5%;
+	width: 90%;
+	height: 100%;
+}
+
+#title {
+	text-align: left;
+	font-size: 3em;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+	padding-left: 2%;
+}
+
+h2 {
+	display: none;
+}
+
+input {
+	border: 1px solid #CC99FF;
+	-moz-box-shadow: 1px 1px 3px #CC99FF;
+	-webkit-box-shadow: 1px 1px 3px #CC99FF;
+	box-shadow: 1px 1px 3px #CC99FF;
+}
+
+button {
+	display: none;
+}
+
+#todo {
+	width: 90%;
+	margin-left: 2%;
+	margin-right: 2%; 
+	font-size: 1.3em;
+	height: 10%;
+	margin-bottom: 10px;
+}
+
+
+.box {
+	display: block;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #DDDDDD;
+	margin-left: 2%;
+	margin-right: 2%;
+	font-size: 1.3em;
+	max-height: 100px;
+
+	-webkit-transition-property: width, height, max-height;
+	-webkit-transition-duration: 1s;
+	-webkit-transition-timing-function: ease-in-out;
+	-webkit-transition-delay: 0s;
+
+	-moz-transition-property: all;
+	-moz-transition-duration: 1s;
+	-moz-transition-timing-function: ease-in-out;
+	-moz-transition-delay: 0s;
+
+	-o-transition-property: all;
+	-o-transition-duration: 1s;
+	-o-transition-timing-function: ease-in-out;
+	-o-transition-delay: 0s;
+
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+}
+
+.addBox {
+	max-height: 0px;
+	overflow: hidden;
+
+	-webkit-transition-property: width, height, max-height;
+	-webkit-transition-duration: 1s;
+	-webkit-transition-timing-function: ease-in-out;
+	-webkit-transition-delay: 0s;
+
+	-moz-transition-property: all;
+	-moz-transition-duration: 1s;
+	-moz-transition-timing-function: ease-in-out;
+	-moz-transition-delay: 0s;
+
+	-o-transition-property: all;
+	-o-transition-duration: 1s;
+	-o-transition-timing-function: ease-in-out;
+	-o-transition-delay: 0s;
+
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+}
+
+.removeBox {
+	max-height: 0px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	background-color: #DDDDDD;
+	margin-left: 2%;
+	margin-right: 2%;
+	font-size: 1.3em;
+	overflow: hidden;
+
+	-webkit-transition-property: width, max-height, height;
+	-webkit-transition-duration: 1s;
+	-webkit-transition-timing-function: ease-in-out;
+	-webkit-transition-delay: 0s;
+
+	-moz-transition-property: all;
+	-moz-transition-duration: 1s;
+	-moz-transition-timing-function: ease-in-out;
+	-moz-transition-delay: 0s;
+
+	-o-transition-property: all;
+	-o-transition-duration: 1s;
+	-o-transition-timing-function: ease-in-out;
+	-o-transition-delay: 0s;
+
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+}
+
+.box .input {
+	margin-top: 5px;
+	padding: 10px;
+}
+
+.box .remove {
+	position: absolute;
+	right: 1%;
+	top: 2px;
+	float: right;
+	-webkit-user-select: none;     
+	-moz-user-select: none; 
+}
+
+@media only screen and (max-device-width : 480px) {
+	body {
+		background-color: #EEE;
+	}
+
+	#wrapper {
+		background-color: #EEE;
+	}
+
+	#container {
+		background-color: #EEE;
+	}
+
+	#title {
+		font-size: 3em;
+	}
+
+	#todo {
+		display: inline;
+		width: 90%;
+		margin-left: 2%;
+		margin-right: 2%; 
+		font-size: 1.3em;
+		height: 10%;
+		margin-bottom: 10px;
+	}
+
+	#add {
+		display: block;
+		margin-top: 1%;
+		margin-left: 2%;
+		margin-right: 2%;
+		color: gray;
+		background-color: #DDD;
+		width: 90%;
+		height: 15%;
+		margin-bottom: 10px;
+	}
+
+	h2 {
+		display: inline;
+		color: #AAAAAA;
+	}
+
+
+	.box .remove {
+		position: absolute;
+		font-size: 2em;
+	}
+
+
+.box {
+	display: block;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #DDDDDD;
+	margin-left: 2%;
+	margin-right: 2%;
+	font-size: 1.3em;
+	max-height: 100px;
+	width: 90%;
+
+
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 1s;
+	-webkit-transition-timing-function: ease-in-out;
+	-webkit-transition-delay: 0s;
+
+	-moz-transition-property: all;
+	-moz-transition-duration: 1s;
+	-moz-transition-timing-function: ease-in-out;
+	-moz-transition-delay: 0s;
+
+	-o-transition-property: all;
+	-o-transition-duration: 1s;
+	-o-transition-timing-function: ease-in-out;
+	-o-transition-delay: 0s;
+
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+}
+
+.addBox {
+	max-height: 0px;
+	overflow: hidden;
+
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 1s;
+	-webkit-transition-timing-function: ease-in-out;
+	-webkit-transition-delay: 0s;
+
+	-moz-transition-property: all;
+	-moz-transition-duration: 1s;
+	-moz-transition-timing-function: ease-in-out;
+	-moz-transition-delay: 0s;
+
+	-o-transition-property: all;
+	-o-transition-duration: 1s;
+	-o-transition-timing-function: ease-in-out;
+	-o-transition-delay: 0s;
+
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+}
+
+.removeBox {
+	max-height: 0px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	background-color: #DDDDDD;
+	margin-left: 2%;
+	margin-right: 2%;
+	font-size: 1.3em;
+	overflow: hidden;
+
+	-webkit-transition-property: max-height, width;
+	-webkit-transition-duration: 1s;
+	-webkit-transition-timing-function: ease-in-out;
+	-webkit-transition-delay: 0s;
+
+	-moz-transition-property: all;
+	-moz-transition-duration: 1s;
+	-moz-transition-timing-function: ease-in-out;
+	-moz-transition-delay: 0s;
+
+	-o-transition-property: all;
+	-o-transition-duration: 1s;
+	-o-transition-timing-function: ease-in-out;
+	-o-transition-delay: 0s;
+
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+}
+}
